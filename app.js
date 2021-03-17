@@ -9,11 +9,22 @@
 //console.log("================");
 
 // Is the same as this...
+
 //profileDataArr.forEach((profileItem) => console.log(profileItem));
-//};
+
 //printProfileData(profileDataArgs);
 
 const inquirer = require("inquirer");
+
+inquirer
+  .prompt([
+    {
+      type: "input",
+      name: "name",
+      message: "What is your name?",
+    },
+  ])
+  .then((answers) => console.log(answers));
 
 //const fs = require("fs");
 
